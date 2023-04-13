@@ -4,13 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
     <title>Encriptador - Kevin Sarria</title>
 </head>
 <body>
 
-    <main class="container">
+    <main class="contenedor contenido-principal">
+
+        <div class="logo">
+            <img src="./img/allura-icon.svg" alt="Icono Allura" />
+        </div>
+
+        <section class="contenido-principal__body">
+
+            <textarea id="input-texto" placeholder="Ingrese el texto aquí"></textarea>
+
+            <div class="info">
+                <img src="./img/info-icon.svg" alt="Icono informacion" />
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div class="buttons">
+                <button class="button bg-dark-blue text-white no-border hover:bg-dark-blue" id="encriptar">Encriptar</button>
+                <button class="button border-dark-blue text-dark-blue hover:bg-gray-light" id="desencriptar">Desencriptar</button>
+            </div>
+        </section>
+
+        <aside class="traduccion">
+
+            <div class="traduccion__contenedor flex-col flex-center">
+                <!-- <img src="./img/muneco.png" alt="Icono muneco" />
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingrese el texto que desees encriptar o desencriptar</p> -->
+                
+
+                <!-- <p class="texto-traducido">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et pariatur necessitatibus cum repellat totam, itaque nobis? Laborum esse ut, repellat tempore beatae facere inventore odio est omnis doloremque illum doloribus vitae, accusantium eius ratione ducimus fugiat cumque! Odit voluptatum, necessitatibus, perspiciatis cumque magni corporis eos incidunt minima fuga ullam vero?</p>
+                <button class="button border-dark-blue text-dark-blue hover:bg-gray-light boton-copiar">Copiar</button> -->
+            </div>
+    
+        </aside>
 
     </main>
     
+    <script src="./js/funciones.js"></script>
 </body>
 </html>
